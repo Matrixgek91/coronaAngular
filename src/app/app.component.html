@@ -1,15 +1,15 @@
 <mat-toolbar color="primary">
-    <span>Corona App</span>
+    <span class="app_title">Corona App</span>
     <span class="toolbar_fill_remaining_space"></span>
-    <button mat-button position="right" color=#333>Login</button>
+    <button mat-raised-button position="right" color="accent">Login</button>
 </mat-toolbar>
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav class="sidenav" position="start" mode="side" opened>
         <mat-list>
-            <mat-list-item><a mat-button routerLink="/frontpage" routerLinkActive="active">Front Page</a></mat-list-item>
-            <mat-list-item><a mat-button routerLink="/news" routerLinkActive="active">News</a></mat-list-item>
-            <mat-list-item><button mat-button>Option 3</button></mat-list-item>
+            <mat-list-item><mat-icon>home</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="/frontpage" routerLinkActive="active">Front Page</a></mat-list-item>
+            <mat-list-item><mat-icon>menu_book</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="/news" routerLinkActive="active">News</a></mat-list-item>
+            <mat-list-item><button mat-raised-button class="navbut" color="primary">Option 3</button></mat-list-item>
         </mat-list>
     </mat-sidenav>
     <mat-sidenav-content>

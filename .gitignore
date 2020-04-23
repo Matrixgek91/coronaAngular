@@ -44,3 +44,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+src/assets/images/Dpgmedia.net.png
+src/assets/images/Nos.nl.png
+src/assets/images/Omroepbrabant.nl.png
+src/assets/images/Omroepgelderland.nl.png
+src/assets/images/RTL Nieuws.png
+src/assets/images/Telegraaf.nl.png
+src/assets/images/Www.nu.nl.png

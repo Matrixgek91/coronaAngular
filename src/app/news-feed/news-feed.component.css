@@ -8,10 +8,13 @@ body {
   }
   
   .example-card{
-      margin-top: 4px;
+      width: 90%;
+      max-width: 500px;
+      margin: 20px;
+      padding: 3%;
   }
   
-  .example-header-image { 
+  .header-image { 
     background-size: cover;
   }
   
@@ -20,7 +23,7 @@ body {
   }
   
   .img-article{
-      height: 350px;
+      width: 100%;
   }
   
   .action-buttons{
