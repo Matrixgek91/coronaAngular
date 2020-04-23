@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Components
 import { NewsFeedComponent } from './news-feed/news-feed.component';
-import { RouterModule, Routes } from '@angular/router';
 import { FrontPageComponent } from './front-page/front-page.component';
 
-/* Materials components imports */
+//Modules
+import { AppRoutingModule } from './app-routing.module';
+
+// Materials components imports
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,13 +22,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
+// End materials imports
 
-/* End materials imports */
 
 
-/*const appRoutes: Routes = [
-
-]*/
 
 @NgModule({
   declarations: [
@@ -33,15 +34,10 @@ import { MatListModule } from '@angular/material/list';
     NewsFeedComponent
   ],
   imports: [
-    // Routing
-    /*RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true} //<-- Debugging only!
-    ),*/
-    // End of Routing
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    AppRoutingModule,
     //Material imports
     MatSliderModule,
     MatButtonModule,
@@ -50,7 +46,7 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,    
     //End of meterial imports
   ],
   providers: [],
