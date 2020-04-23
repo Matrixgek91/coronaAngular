@@ -1,0 +1,13 @@
+.sidenav-container{
+    height: 100%;
+}
+
+.sidenav{
+    width: 20%;
+    min-width: 10em;
+    color: brown;
+}
+
+.toolbar_fill_remaining_space{
+    flex: 1 1 auto;
+}
