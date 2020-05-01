@@ -3,15 +3,25 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
-//Components
+//Components (pages)
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { FrontPageComponent } from './front-page/front-page.component';
+
+//Components (dialogs)
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterDialogComponent } from './register-dialog/register-dialog.component';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+
+//Services
+import { ViaServiceComponent } from './via-service/via-service.component';
 
 //Modules
 import { AppRoutingModule } from './app-routing.module';
 
-// Materials components imports
+//Materials components imports
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,8 +31,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
-// End materials imports
+
 
 
 
@@ -31,13 +45,19 @@ import { MatListModule } from '@angular/material/list';
   declarations: [
     AppComponent,
     FrontPageComponent,
-    NewsFeedComponent
+    NewsFeedComponent,
+    RegisterDialogComponent,
+    RegisterFormComponent,
+    LoginDialogComponent,
+    LoginFormComponent,
+    ViaServiceComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     //Material imports
     MatSliderModule,
     MatButtonModule,
@@ -46,7 +66,11 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule,    
+    MatListModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule    
     //End of meterial imports
   ],
   providers: [],

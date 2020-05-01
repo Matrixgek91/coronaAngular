@@ -1,9 +1,19 @@
 <mat-toolbar color="primary">
     <span class="app_title">Corona App</span>
     <span class="toolbar_fill_remaining_space"></span>
-    <button mat-raised-button position="right" color="basic">Registreer</button>
-    <span class="navspacer"></span>
-    <button mat-raised-button position="right" color="accent">Login</button>
+
+    <div>
+        <div *ngIf="firstName == ''">
+            <button mat-raised-button (click)="openRegisterDialog()">Registreer</button>
+            <button mat-raised-button (click)="openLoginDialog()">Login</button>
+        </div>
+        
+        <div *ngIf="firstName != ''">
+            Welkom {{firstName}}
+            <button mat-raised-button (click)="logout()">Logout</button>
+        </div>
+    </div>
+    
 </mat-toolbar>
 
 <mat-sidenav-container class="sidenav-container">
