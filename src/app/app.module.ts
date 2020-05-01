@@ -35,6 +35,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -50,7 +51,8 @@ import { MatSelectModule } from '@angular/material/select';
     RegisterFormComponent,
     LoginDialogComponent,
     LoginFormComponent,
-    ViaServiceComponent
+    ViaServiceComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

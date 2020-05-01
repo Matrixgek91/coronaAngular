@@ -4,23 +4,23 @@
 
     <div>
         <div *ngIf="firstName == ''">
-            <button mat-raised-button (click)="openRegisterDialog()">Registreer</button>
-            <button mat-raised-button (click)="openLoginDialog()">Login</button>
+            <button class="tbbuttons" mat-raised-button (click)="openRegisterDialog()">Registreer</button>
+            <button class="tbbuttons" mat-raised-button (click)="openLoginDialog()">Login</button>
         </div>
         
         <div *ngIf="firstName != ''">
-            Welkom {{firstName}}
-            <button mat-raised-button (click)="logout()">Logout</button>
+            Welkom {{firstName}}   
+            <button class="tbbuttons" mat-raised-button (click)="logout()">Logout</button>
         </div>
     </div>
-    
+
 </mat-toolbar>
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav class="sidenav" position="start" mode="side" opened>
         <mat-list>
-            <mat-list-item><mat-icon>home</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="/frontpage" routerLinkActive="active">Front Page</a></mat-list-item>
-            <mat-list-item><mat-icon>menu_book</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="/news" routerLinkActive="active">News</a></mat-list-item>
+            <mat-list-item><mat-icon>home</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="/frontpage" routerLinkActive="active">Home</a></mat-list-item>
+            <mat-list-item><mat-icon>menu_book</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="/news" routerLinkActive="active">Nieuws</a></mat-list-item>
             <mat-list-item><button mat-raised-button class="navbut" color="primary">Option 3</button></mat-list-item>
         </mat-list>
     </mat-sidenav>

@@ -34,3 +34,12 @@
 .navspacer{
     width: 10px;
 }
+
+.tbbuttons{
+    margin-left: 10px;
+    background-color: #FFD740;
+}
+
+.tbbuttons:hover{
+    background-color: beige;
+}
