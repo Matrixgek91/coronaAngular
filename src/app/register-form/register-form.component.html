@@ -4,13 +4,13 @@
 
     <mat-form-field appearance="legacy">
         <mat-label>Gebruikersnaam</mat-label>
-        <input matInput required type="text" id="username" [(ngModel)]="registration.username" name="username">
+        <input matInput required min="5" max="20" type="text" id="username" [(ngModel)]="registration.username" name="username">
         <mat-hint>5-20 characters</mat-hint>
     </mat-form-field>
       <br>
         <mat-form-field appearance="legacy">
         <mat-label>Wachtwoord</mat-label>
-        <input matInput required type="password" id="password" [(ngModel)]="registration.password" name="password">
+        <input matInput required min="5" max="20" type="password" id="password" [(ngModel)]="registration.password" name="password">
         <mat-hint>5-20 characters</mat-hint>
     </mat-form-field>
     <br>
