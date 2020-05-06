@@ -1,34 +1,36 @@
-<mat-toolbar color="primary">
-    <span class="app_title">Corona App</span>
-    <span class="toolbar_fill_remaining_space"></span>
+<div class="totalPage">
+    <mat-toolbar class="toolbar" color="primary">
+        <span class="app_title">Corona App</span>
+        <span class="toolbar_fill_remaining_space"></span>
 
-    <div>
-        <div *ngIf="firstName == ''">
-            <button class="tbbuttons" mat-raised-button (click)="openRegisterDialog()">Registreer</button>
-            <button class="tbbuttons" mat-raised-button (click)="openLoginDialog()">Login</button>
+        <div>
+            <div *ngIf="firstName == ''">
+                <button class="tbbuttons" mat-raised-button (click)="openRegisterDialog()">Registreer</button>
+                <button class="tbbuttons" mat-raised-button (click)="openLoginDialog()">Login</button>
+            </div>
+            
+            <div *ngIf="firstName != ''">
+                Welkom {{firstName}}   
+                <button class="tbbuttons" mat-raised-button (click)="logout()">Logout</button>
+            </div>
         </div>
-        
-        <div *ngIf="firstName != ''">
-            Welkom {{firstName}}   
-            <button class="tbbuttons" mat-raised-button (click)="logout()">Logout</button>
-        </div>
-    </div>
 
-</mat-toolbar>
+    </mat-toolbar>
 
-<mat-sidenav-container class="sidenav-container">
-    <mat-sidenav class="sidenav" position="start" mode="side" opened>
-        <mat-list>
-            <mat-list-item><mat-icon>home</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="/home" routerLinkActive="active">Home</a></mat-list-item>
-            <mat-list-item><mat-icon>menu_book</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="/nieuws" routerLinkActive="active">Nieuws</a></mat-list-item>
-            <mat-list-item><mat-icon>info</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary" routerLink="/regels" routerLinkActive="active">Regels & Adviezen</button></mat-list-item>
-            <mat-list-item><mat-icon>calendar_today</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary" routerLink="/kalender" routerLinkActive="active">Kalender</button></mat-list-item>
-            <mat-list-item><mat-icon>check_circle_outline</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary">Symptomen Check</button></mat-list-item>
-            <mat-list-item><mat-icon>shopping_cart</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary">Winkel</button></mat-list-item>
-        </mat-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav class="sidenav" position="start" mode="side" opened>
+            <mat-list>
+                <mat-list-item><mat-icon>home</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="/home" routerLinkActive="active">Home</a></mat-list-item>
+                <mat-list-item><mat-icon>menu_book</mat-icon><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="/nieuws" routerLinkActive="active">Nieuws</a></mat-list-item>
+                <mat-list-item><mat-icon>info</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary" routerLink="/regels" routerLinkActive="active">Regels & Adviezen</button></mat-list-item>
+                <mat-list-item><mat-icon>calendar_today</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary" routerLink="/kalender" routerLinkActive="active">Kalender</button></mat-list-item>
+                <mat-list-item><mat-icon>check_circle_outline</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary">Symptomen Check</button></mat-list-item>
+                <mat-list-item><mat-icon>shopping_cart</mat-icon><span class="navspacer"></span><button mat-raised-button class="navbut" color="primary">Winkel</button></mat-list-item>
+            </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
 
-</mat-sidenav-container>
+    </mat-sidenav-container>
+</div>

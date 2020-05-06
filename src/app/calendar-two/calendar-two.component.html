@@ -1,17 +1,19 @@
-<p>
+<div class="CalDiv">
+  <p>
     <full-calendar 
-    [plugins]="calendarPlugins"
-    defaultView="dayGridMonth" 
-    (dayRender) = "dayRender($event)"
-    [weekends] = "true"
-    [events]="[
-    { title: 'Presentatie eindopdracht', 
-      date: '2020-05-13',
-      allDay: true,
-      editable: true,
-      color: 'purple',
-      eventStartEditable: true
-    }
-  ]"
-></full-calendar>
-</p>
+        [plugins]="calendarPlugins"
+        defaultView="dayGridMonth" 
+        (dayRender) = "dayRender($event)"
+        [weekends] = "true"
+        [events]="[
+        { title: 'Presentatie eindopdracht', 
+          date: '2020-05-13',
+          allDay: true,
+          editable: true,
+          color: 'purple',
+          eventStartEditable: true
+        }
+      ]"
+    ></full-calendar>
+  </p>
+</div>
