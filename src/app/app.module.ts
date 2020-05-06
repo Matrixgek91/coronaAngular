@@ -36,6 +36,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RegelsComponent } from './regels/regels.component';
 
 
 
@@ -52,7 +53,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LoginDialogComponent,
     LoginFormComponent,
     ViaServiceComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RegelsComponent
   ],
   imports: [
     BrowserModule,
