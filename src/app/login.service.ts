@@ -11,7 +11,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   verify(login: Login){
-    return this.http.post<Registration[]>('http://localhost:8080/login', login)
+    return this.http.post<Registration[]>('/login', login)
 
   }
 }

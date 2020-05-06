@@ -10,7 +10,7 @@ export class RegistrationService {
   constructor(private http: HttpClient) { }
 
   save(registration: Registration) {
-    return this.http.post<any>('http://localhost:8080/registration', registration)
+    return this.http.post<any>('/registration', registration)
     
   }
 
