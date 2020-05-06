@@ -14,12 +14,16 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterDialogComponent } from './register-dialog/register-dialog.component';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RegelsComponent } from './regels/regels.component';
+import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
 
 //Services
 import { ViaServiceComponent } from './via-service/via-service.component';
 
 //Modules
 import { AppRoutingModule } from './app-routing.module';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 //Materials components imports
 
@@ -35,9 +39,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { RegelsComponent } from './regels/regels.component';
-import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 
 
 
@@ -64,6 +67,7 @@ import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    FullCalendarModule,
     //Material imports
     MatSliderModule,
     MatButtonModule,
@@ -76,7 +80,8 @@ import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule    
+    MatSelectModule,
+    MatDatepickerModule
     //End of meterial imports
   ],
   providers: [],
