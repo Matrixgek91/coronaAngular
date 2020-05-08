@@ -57,3 +57,10 @@ body {
       color: white;
   }
   
+  .poweredby{
+      font-size: xx-small;
+  }
+
+  .fill_remaining_space{
+    flex: 1 1 auto;
+}

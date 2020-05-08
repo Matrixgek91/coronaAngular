@@ -51,3 +51,7 @@
 .tbbuttons:hover{
     background-color: beige;
 }
+
+.toolbarimg {
+    height: 7vh;
+}

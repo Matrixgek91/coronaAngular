@@ -1,0 +1,24 @@
+.frontpage {
+    background-image: linear-gradient(#FFD740, #637ab7);  
+    margin: auto auto;   
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+}
+
+h1 {
+    padding-top: 10vh;
+    color: white;
+    height: 50vh;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contentcontainer {
+    padding-top: 10vh;
+}    
