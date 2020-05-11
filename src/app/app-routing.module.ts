@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'nieuws', component: NewsFeedComponent},
   {path: 'regels', component: RegelsComponent},
   {path: 'kalender', component: CalendarTwoComponent},
-  {path: '', redirectTo: '/frontpage', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: FrontPageComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
