@@ -31,11 +31,11 @@
     <br>
     <mat-form-field appearance="legacy">
         <mat-label>Geslacht</mat-label>
-        <select matNativeControl required id="gender" [(ngModel)]="registration.gender" name="gender">
-            <option value="man">Man</option>
-            <option value="vrouw">Vrouw</option>
-            <option value="overig">Overig</option>
-          </select>
+        <mat-select matNativeControl required id="gender" [(ngModel)]="registration.gender" name="gender">
+            <mat-option value="man">Man</mat-option>
+            <mat-option value="vrouw">Vrouw</mat-option>
+            <mat-option value="overig">Overig</mat-option>
+          </mat-select>
     </mat-form-field>
     <br>
     <mat-form-field appearance="legacy">
