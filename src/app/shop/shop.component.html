@@ -1,0 +1,19 @@
+<div class="totalPage">
+    <mat-toolbar class="toolbar" color="accent">
+      <span class="app_title">Corona Webshop</span>
+      <span class="toolbar_fill_remaining_space"></span>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav class="sidenav" position="start" mode="side" opened>
+        <mat-list>
+          <mat-list-item><span class="navspacer"></span><a mat-raised-button class="navbut" routerLink="./products">Product list</a></mat-list-item>
+          <mat-list-item><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="./add">Add products</a></mat-list-item>
+          <mat-list-item><span class="navspacer"></span><a mat-raised-button class="navbut" color="primary" routerLink="./cart">Shopping cart</a></mat-list-item>
+        </mat-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

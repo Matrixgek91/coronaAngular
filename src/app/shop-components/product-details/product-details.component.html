@@ -1,0 +1,60 @@
+<div *ngIf="currentProduct" class="edit-form">
+    <h4>Product</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Product</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          [(ngModel)]="currentProduct.title"
+          name="title"
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Product description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          [(ngModel)]="currentProduct.description"
+          name="description"
+        />
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input
+          type="text"
+          class="form-control"
+          id="price"
+          [(ngModel)]="currentProduct.price"
+          name="price"
+        />
+      </div> 
+
+      <div class="form-group">
+        <label for="items">How many products do you want to buy?</label>
+        <input
+          type="text"
+          class="form-control"
+          id="items"
+          [(ngModel)]="currentProduct.items"
+          name="items"
+        />
+      </div> 
+    </form>
+    <button class="badge badge-danger mr-2" (click)="deleteProduct()">
+      Delete
+    </button>
+  
+    <button type="submit" class="badge badge-success" (click)="updateProduct()">
+      Update
+    </button>
+    
+    <p>{{ message }}</p>
+  </div>
+  
+  <div *ngIf="!currentProduct">
+    <br />
+    <p>Cannot access this Product...</p>
+  </div>
