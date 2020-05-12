@@ -12,6 +12,7 @@ import { ProductListComponent } from './shop-components/product-list/product-lis
 import { ProductDetailsComponent } from './shop-components/product-details/product-details.component';
 import { AddProductComponent } from './shop-components/add-product/add-product.component';
 import { ShoppingCartComponent } from './shop-components/shopping-cart/shopping-cart.component';
+import { SelectorComponent } from './selector/selector.component';
 
 //end components
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'nieuws', component: NewsFeedComponent},
   {path: 'regels', component: RegelsComponent},
   {path: 'kalender', component: CalendarTwoComponent},
+  {path: 'symptomencheck', component: SelectorComponent},
   {path: 'winkel', component: ShopComponent, 
     children: [
       { path: '', redirectTo: 'products', pathMatch: 'full' },

@@ -42,7 +42,7 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <button><a href="/winkel/products/{{ currentProduct.id }}">Details</a></button>
+              <a mat-raised-button [routerLink]="['/winkel/products', product.id]" routerLinkActive="active">Details</a>
             </mat-card-actions>
           </mat-card>
         </div>

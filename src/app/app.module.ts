@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 //Components (pages)
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { FrontPageComponent } from './front-page/front-page.component';
+import { SelectorComponent } from './selector/selector.component';
 
 //Components (dialogs)
 import { RegisterFormComponent } from './register-form/register-form.component';
@@ -68,7 +69,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ProductDetailsComponent,
     ProductListComponent,
     ShoppingCartComponent,
-    ShopComponent
+    ShopComponent,
+    SelectorComponent
   ],
   imports: [
     BrowserModule,
